@@ -5,34 +5,34 @@ Gitの基本操作やエラー解決方法をまとめる自分専用のメモ�
 ## 📋 基本の流れ（SNSの投稿に例えると）
 
 1. **git pull**
-   ・役割：最新の状態を取り込む
-   ・コマンド：`git pull`
+   - 役割：最新の状態を取り込む
+   - コマンド：`git pull`
 
 2. **コードを書く、消すなどの作業をする**
 
 3. **git add**
-   ・役割：写真を撮る準備（ステージング）
-   ・コマンド：`git add <ファイル名>` または `git add .`（全部）
+   - 役割：写真を撮る準備（ステージング）
+   - コマンド：`git add <ファイル名>` または `git add .`（全部）
 
 4. **git commit**
-   ・役割：シャッターを切る（記録の確定）
-   ・コマンド：`git commit -m "メッセージ"`
+   - 役割：シャッターを切る（記録の確定）
+   - コマンド：`git commit -m "メッセージ"`
 
 5. **git push**
-   ・役割：アルバムをサーバーに送る（共有）
-   ・コマンド：`git push origin main`
+   - 役割：アルバムをサーバーに送る（共有）
+   - コマンド：`git push origin main`
 
 6. **git status**
-   ・役割：状態の確認
-   ・コマンド：`git status`
-   ・結果1：nothing to commit, working tree clean(リモートとローカルが完全に一致している)
-   ・結果2：Untracked files(Gitの管理下に入っていないファイルがある)
+   - 役割：状態の確認
+   - コマンド：`git status`
+   - 結果1：nothing to commit, working tree clean(リモートとローカルが完全に一致している)
+   - 結果2：Untracked files(Gitの管理下に入っていないファイルがある)
         - 対応：`git add <ファイル名>`/`git add .`
-   ・結果3：Changes not staged for commit(Gitの管理下に入っているがステージングではない)
+   - 結果3：Changes not staged for commit(Gitの管理下に入っているがステージングではない)
         - 対応：`git add <ファイル名>`/`git add .`
-   ・結果4：Changes to be commited(ステージング済みでコミット待ち)
+   - 結果4：Changes to be commited(ステージング済みでコミット待ち)
         - 対応：`git commit -m "メッセージ"`
-   ・結果5：Your branch is ahead/behind of ...(ローカルとリモートでコミット数に差がある)
+   - 結果5：Your branch is ahead/behind of ...(ローカルとリモートでコミット数に差がある)
         - 対応：`git push`(ahead)/`git pull`(behind)
 
 ## 🛠 トラブルシューティング
