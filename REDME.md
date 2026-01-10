@@ -25,6 +25,6 @@ git pull --no-rebase origin main
 ```
 
 ### 失敗メモ
-- 'git rm' に'-d'オプションはない！
-- ファイル削除は'git rm <ファイル名>'
-- フォルダ削除は'git rm -r <フォルダ名>'
+- `git rm`に`-d`オプションはない！
+- ファイル削除は`git rm <ファイル名>`
+- フォルダ削除は`git rm -r <フォルダ名>`
